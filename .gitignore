@@ -1,0 +1,43 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# C++ build artifacts
+*.o
+*.so
+*.a
+*.dylib
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!*Config.cmake
+!*Targets.cmake
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Colcon
+.colcon_install_layout
+
+# Catkin (just in case)
+devel/
+.catkin_workspace
+
+# Compiled ROS messages
+msg_gen/
+srv_gen/

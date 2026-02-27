@@ -1,1 +1,0 @@
-/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_c/ros2web_interfaces/msg/detail/ws_msg_type__struct.h

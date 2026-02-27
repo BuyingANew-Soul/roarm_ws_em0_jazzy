@@ -1,2 +1,0 @@
-[console_scripts]
-widgets = ros2web_widgets.widgets:main

@@ -1,1 +1,0 @@
-/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit/rosidl_generator_c/roarm_moveit/srv/move_point_cmd.h

@@ -1,2 +1,0 @@
-[console_scripts]
-roarm_web_app = roarm_web_app.roarm_web_app:main

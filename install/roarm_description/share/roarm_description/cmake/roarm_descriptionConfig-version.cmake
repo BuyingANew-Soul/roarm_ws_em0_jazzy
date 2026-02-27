@@ -1,1 +1,0 @@
-/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description/ament_cmake_core/roarm_descriptionConfig-version.cmake

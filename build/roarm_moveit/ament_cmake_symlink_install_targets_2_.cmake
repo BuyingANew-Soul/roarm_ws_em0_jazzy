@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit/rosidl_generator_py/roarm_moveit/roarm_moveit_s__rosidl_typesupport_c.so" "TARGETS" "roarm_moveit_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/roarm_moveit")

@@ -1,0 +1,79 @@
+[0.012s] Invoking command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/moveit_servo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/moveit_servo -- -j24 -l24
+[0.251s] [  3%] [32mBuilding CXX object CMakeFiles/servo_controller_input.dir/src/teleop_demo/joystick_servo_example.cpp.o[0m
+[0.251s] [  6%] [32mBuilding CXX object CMakeFiles/fake_command_publisher.dir/test/publish_fake_jog_commands.cpp.o[0m
+[0.251s] [ 12%] Built target gtest_main
+[0.251s] [ 18%] Built target gtest
+[0.251s] [ 27%] Built target moveit_servo_lib_parameters
+[0.251s] [ 30%] [32mBuilding CXX object CMakeFiles/test_servo_integration.dir/test/test_servo_interface.cpp.o[0m
+[0.251s] [ 45%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/enforce_limits.cpp.o[0m
+[0.252s] [ 45%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/collision_check.cpp.o[0m
+[0.252s] [ 45%] [32mBuilding CXX object CMakeFiles/test_servo_collision.dir/test/test_servo_collision.cpp.o[0m
+[0.252s] [ 45%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo.cpp.o[0m
+[0.252s] [ 45%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/servo_calcs.cpp.o[0m
+[0.252s] [ 48%] [32mBuilding CXX object CMakeFiles/moveit_servo_lib.dir/src/utilities.cpp.o[0m
+[0.252s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/test/publish_fake_jog_commands.cpp:50:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/qos_event.hpp: No such file or directory
+[0.252s]    50 | #include [01;31m[K<rclcpp/qos_event.hpp>[m[K
+[0.252s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.252s] compilation terminated.
+[0.252s] gmake[2]: *** [CMakeFiles/fake_command_publisher.dir/build.make:76: CMakeFiles/fake_command_publisher.dir/test/publish_fake_jog_commands.cpp.o] Error 1
+[0.252s] gmake[1]: *** [CMakeFiles/Makefile2:365: CMakeFiles/fake_command_publisher.dir/all] Error 2
+[0.252s] gmake[1]: *** Waiting for unfinished jobs....
+[0.252s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/src/teleop_demo/joystick_servo_example.cpp:52:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/qos_event.hpp: No such file or directory
+[0.252s]    52 | #include [01;31m[K<rclcpp/qos_event.hpp>[m[K
+[0.252s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.252s] compilation terminated.
+[0.252s] gmake[2]: *** [CMakeFiles/servo_controller_input.dir/build.make:76: CMakeFiles/servo_controller_input.dir/src/teleop_demo/joystick_servo_example.cpp.o] Error 1
+[0.252s] gmake[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/servo_controller_input.dir/all] Error 2
+[0.252s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/test/test_servo_collision.cpp:41[m[K:
+[0.253s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/test/servo_launch_test_common.hpp:54:10:[m[K [01;31m[Kfatal error: [m[Kmoveit_msgs/srv/change_drift_dimensions.hpp: No such file or directory
+[0.253s]    54 | #include [01;31m[K<moveit_msgs/srv/change_drift_dimensions.hpp>[m[K
+[0.253s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.253s] compilation terminated.
+[0.253s] gmake[2]: *** [CMakeFiles/test_servo_collision.dir/build.make:76: CMakeFiles/test_servo_collision.dir/test/test_servo_collision.cpp.o] Error 1
+[0.253s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/test_servo_collision.dir/all] Error 2
+[0.253s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/test/test_servo_interface.cpp:39[m[K:
+[0.253s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/test/servo_launch_test_common.hpp:54:10:[m[K [01;31m[Kfatal error: [m[Kmoveit_msgs/srv/change_drift_dimensions.hpp: No such file or directory
+[0.253s]    54 | #include [01;31m[K<moveit_msgs/srv/change_drift_dimensions.hpp>[m[K
+[0.253s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.253s] compilation terminated.
+[0.253s] gmake[2]: *** [CMakeFiles/test_servo_integration.dir/build.make:76: CMakeFiles/test_servo_integration.dir/test/test_servo_interface.cpp.o] Error 1
+[0.253s] gmake[1]: *** [CMakeFiles/Makefile2:393: CMakeFiles/test_servo_integration.dir/all] Error 2
+[0.568s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/utilities.h:39[m[K,
+[0.568s]                  from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/src/utilities.cpp:35[m[K:
+[0.568s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_model/joint_model_group.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[0.568s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[0.568s]       |                                                                             [01;36m[K^[m[K
+[0.718s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/src/enforce_limits.cpp:43[m[K:
+[0.718s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_model/joint_model_group.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[0.718s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[0.718s]       |                                                                             [01;36m[K^[m[K
+[0.808s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/servo.h:47[m[K,
+[0.808s]                  from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/src/servo.cpp:41[m[K:
+[0.808s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/servo_calcs.h:52:10:[m[K [01;31m[Kfatal error: [m[Kmoveit_msgs/srv/change_drift_dimensions.hpp: No such file or directory
+[0.808s]    52 | #include [01;31m[K<moveit_msgs/srv/change_drift_dimensions.hpp>[m[K
+[0.808s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.808s] compilation terminated.
+[0.819s] gmake[2]: *** [CMakeFiles/moveit_servo_lib.dir/build.make:104: CMakeFiles/moveit_servo_lib.dir/src/servo.cpp.o] Error 1
+[0.820s] gmake[2]: *** Waiting for unfinished jobs....
+[0.854s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/src/servo_calcs.cpp:50[m[K:
+[0.854s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/servo_calcs.h:52:10:[m[K [01;31m[Kfatal error: [m[Kmoveit_msgs/srv/change_drift_dimensions.hpp: No such file or directory
+[0.854s]    52 | #include [01;31m[K<moveit_msgs/srv/change_drift_dimensions.hpp>[m[K
+[0.854s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.854s] compilation terminated.
+[0.858s] gmake[2]: *** [CMakeFiles/moveit_servo_lib.dir/build.make:118: CMakeFiles/moveit_servo_lib.dir/src/servo_calcs.cpp.o] Error 1
+[1.472s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/utilities.h:40[m[K:
+[1.472s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_state/robot_state.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[1.472s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[1.472s]       |                                                                             [01;36m[K^[m[K
+[1.727s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/collision_check.h:45[m[K,
+[1.727s]                  from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/src/collision_check.cpp:42[m[K:
+[1.727s] [01m[K/opt/ros/jazzy/include/moveit_ros_planning/moveit/robot_model_loader/robot_model_loader.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[1.727s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[1.727s]       |                                                                             [01;36m[K^[m[K
+[2.402s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/moveit_servo/include/moveit_servo/collision_check.h:46[m[K:
+[2.403s] [01m[K/opt/ros/jazzy/include/moveit_ros_planning/moveit/planning_scene_monitor/planning_scene_monitor.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[2.403s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[2.403s]       |                                                                             [01;36m[K^[m[K
+[6.750s] gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/moveit_servo_lib.dir/all] Error 2
+[6.750s] gmake: *** [Makefile:146: all] Error 2
+[6.753s] Invoked command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/moveit_servo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/moveit_servo -- -j24 -l24

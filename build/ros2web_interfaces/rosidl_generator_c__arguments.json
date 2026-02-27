@@ -1,0 +1,72 @@
+{
+  "package_name": "ros2web_interfaces",
+  "output_dir": "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_c/ros2web_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/BodyPart.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/ContentType.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/HTTPStatusCode.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/WSMsgData.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/WSMsgType.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/WSMsg.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:srv/HTTP.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:srv/WS.idl"
+  ],
+  "ros_interface_files": [
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/BodyPart.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/ContentType.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/HTTPStatusCode.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/WSMsgData.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/WSMsgType.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/WSMsg.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/srv/HTTP.srv",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/srv/WS.srv"
+  ],
+  "ros_interface_dependencies": [
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/msg/BodyPart.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/msg/ContentType.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/msg/HTTPStatusCode.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/msg/WSMsgData.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/msg/WSMsgType.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/msg/WSMsg.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/srv/HTTP.idl",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces/srv/WS.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "type_description_tuples": [
+    "msg/BodyPart.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/msg/BodyPart.json",
+    "msg/ContentType.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/msg/ContentType.json",
+    "msg/HTTPStatusCode.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/msg/HTTPStatusCode.json",
+    "msg/WSMsgData.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/msg/WSMsgData.json",
+    "msg/WSMsgType.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/msg/WSMsgType.json",
+    "msg/WSMsg.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/msg/WSMsg.json",
+    "srv/HTTP.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/srv/HTTP.json",
+    "srv/WS.idl:/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_type_description/ros2web_interfaces/srv/WS.json"
+  ]
+}

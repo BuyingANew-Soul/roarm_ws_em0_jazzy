@@ -1,0 +1,8 @@
+In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_description_hand_ikfast_moveit_plugin.cpp:45[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_core/moveit/kinematics_base/kinematics_base.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                             [01;36m[K^[m[K
+In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_description_hand_ikfast_moveit_plugin.cpp:46[m[K:
+[01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_state/robot_state.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+   51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+      |                                                                             [01;36m[K^[m[K

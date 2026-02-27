@@ -1,0 +1,58 @@
+[0.013s] Invoking command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description
+[0.146s] -- The C compiler identification is GNU 13.3.0
+[0.146s] -- The CXX compiler identification is GNU 13.3.0
+[0.146s] -- Detecting C compiler ABI info
+[0.178s] -- Detecting C compiler ABI info - done
+[0.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.186s] -- Detecting C compile features
+[0.186s] -- Detecting C compile features - done
+[0.192s] -- Detecting CXX compiler ABI info
+[0.254s] -- Detecting CXX compiler ABI info - done
+[0.262s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.262s] -- Detecting CXX compile features
+[0.263s] -- Detecting CXX compile features - done
+[0.265s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.356s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.403s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.440s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.522s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.522s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.523s] -- Added test 'lint_cmake' to check CMake code style
+[0.524s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.524s] -- Added test 'xmllint' to check XML markup files
+[0.525s] -- Configuring done (0.5s)
+[0.528s] -- Generating done (0.0s)
+[0.528s] -- Build files have been written to: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description
+[0.533s] Invoked command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description
+[0.533s] Invoking command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description -- -j24 -l24
+[0.564s] Invoked command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description -- -j24 -l24
+[0.571s] Invoking command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description
+[0.576s] -- Install configuration: ""
+[0.576s] -- Execute custom install script
+[0.576s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/config/joint_names_roarm.yaml
+[0.582s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/config/roarm_description.rviz
+[0.587s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/launch/display.launch.py
+[0.591s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/meshes/base_link.STL
+[0.596s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/meshes/gripper_link.STL
+[0.604s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/meshes/link1.STL
+[0.612s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/meshes/link2.STL
+[0.617s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/meshes/link3.STL
+[0.621s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/urdf/roarm_description.csv
+[0.626s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/urdf/roarm_description.urdf
+[0.631s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/urdf/roarm_description_web_app.urdf
+[0.635s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/ament_index/resource_index/package_run_dependencies/roarm_description
+[0.640s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/ament_index/resource_index/parent_prefix_path/roarm_description
+[0.645s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/environment/ament_prefix_path.sh
+[0.651s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/environment/ament_prefix_path.dsv
+[0.656s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/environment/path.sh
+[0.662s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/environment/path.dsv
+[0.666s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/local_setup.bash
+[0.671s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/local_setup.sh
+[0.676s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/local_setup.zsh
+[0.680s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/local_setup.dsv
+[0.685s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/package.dsv
+[0.690s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/ament_index/resource_index/packages/roarm_description
+[0.694s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/cmake/roarm_descriptionConfig.cmake
+[0.699s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/cmake/roarm_descriptionConfig-version.cmake
+[0.709s] -- Symlinking: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_description/share/roarm_description/package.xml
+[0.721s] Invoked command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_description

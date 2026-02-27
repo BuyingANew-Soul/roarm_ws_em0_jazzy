@@ -1,0 +1,13 @@
+{
+  "package_name": "ros2web_interfaces",
+  "non_idl_tuples": [
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:msg/BodyPart.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:msg/ContentType.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:msg/HTTPStatusCode.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:msg/WSMsgData.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:msg/WSMsgType.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:msg/WSMsg.msg",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:srv/HTTP.srv",
+    "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces:srv/WS.srv"
+  ]
+}

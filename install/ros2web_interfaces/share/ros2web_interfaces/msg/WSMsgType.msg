@@ -1,0 +1,1 @@
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_else/ros2web-ros2/ros2web_interfaces/msg/WSMsgType.msg

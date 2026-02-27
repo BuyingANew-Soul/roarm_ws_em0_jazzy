@@ -39,10 +39,10 @@ install(TARGETS ${IKFAST_LIBRARY_NAME}
 
 pluginlib_export_plugin_description_file(moveit_core roarm_description_hand_moveit_ikfast_plugin_description.xml)
 
-ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
-ament_export_dependencies(moveit_core)
-ament_export_dependencies(pluginlib)
-ament_export_dependencies(rclcpp)
-ament_export_dependencies(tf2_kdl)
-ament_export_dependencies(tf2_eigen)
+# ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
+# ament_export_dependencies(moveit_core)
+# ament_export_dependencies(pluginlib)
+# ament_export_dependencies(rclcpp)
+# ament_export_dependencies(tf2_kdl)
+# ament_export_dependencies(tf2_eigen)
 ament_package()

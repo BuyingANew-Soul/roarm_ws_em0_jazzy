@@ -1,0 +1,3 @@
+[console_scripts]
+api = ros2web_example_py.api:main
+form = ros2web_example_py.form:main

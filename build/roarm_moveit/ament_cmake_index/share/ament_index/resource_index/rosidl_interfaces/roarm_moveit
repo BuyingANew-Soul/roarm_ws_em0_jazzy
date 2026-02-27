@@ -1,0 +1,6 @@
+srv/GetPoseCmd.idl
+srv/GetPoseCmd.srv
+srv/MoveCircleCmd.idl
+srv/MoveCircleCmd.srv
+srv/MovePointCmd.idl
+srv/MovePointCmd.srv

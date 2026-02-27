@@ -1,0 +1,8 @@
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/BodyPart.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/ContentType.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/HTTPStatusCode.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/WSMsgData.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/WSMsgType.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:msg/WSMsg.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:srv/HTTP.idl
+/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_adapter/ros2web_interfaces:srv/WS.idl

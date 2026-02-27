@@ -6,15 +6,15 @@
   <description>
      An automatically generated package with all the configuration and launch files for using the roarm_description with the MoveIt Motion Planning Framework
   </description>
-  <maintainer email="2849678712@qq.com">dudu</maintainer>
+  <maintainer email="efta.k.bashar@jyu.fi">efta</maintainer>
 
-  <license>BSD</license>
+  <license>BSD-3-Clause</license>
 
   <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit2/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit2</url>
+  <url type="bugtracker">https://github.com/moveit/moveit2/issues</url>
+  <url type="repository">https://github.com/moveit/moveit2</url>
 
-  <author email="2849678712@qq.com">dudu</author>
+  <author email="efta.k.bashar@jyu.fi">efta</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -44,9 +44,7 @@
   <exec_depend>tf2_ros</exec_depend>
   <exec_depend>warehouse_ros_mongo</exec_depend>
   <exec_depend>xacro</exec_depend>
-  <build_depend>rosidl_default_generators</build_depend>
-  <exec_depend>rosidl_default_runtime</exec_depend>
-  <member_of_group>rosidl_interface_packages</member_of_group>
+
 
   <export>
       <build_type>ament_cmake</build_type>

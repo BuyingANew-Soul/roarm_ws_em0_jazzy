@@ -5,9 +5,9 @@ moveit_setup_assistant_config:
   srdf:
     relative_path: config/roarm_description.srdf
   package_settings:
-    author_name: dudu
-    author_email: 2849678712@qq.com
-    generated_timestamp: 1723201671
+    author_name: efta
+    author_email: efta.k.bashar@jyu.fi
+    generated_timestamp: 1772200139
   control_xacro:
     command:
       - position

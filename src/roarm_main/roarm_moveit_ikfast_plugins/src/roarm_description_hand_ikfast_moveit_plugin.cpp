@@ -42,8 +42,8 @@
  */
 
 #include <rclcpp/rclcpp.hpp>
-#include <moveit/kinematics_base/kinematics_base.h>
-#include <moveit/robot_state/robot_state.h>
+#include <moveit/kinematics_base/kinematics_base.hpp>
+#include <moveit/robot_state/robot_state.hpp>
 #include <Eigen/Geometry>
 #include <tf2_kdl/tf2_kdl.hpp>
 #include <tf2_eigen/tf2_eigen.hpp>
@@ -410,7 +410,7 @@ bool IKFastKinematicsPlugin::initialize(const rclcpp::Node::SharedPtr& node,
   }
 
   storeValues(robot_model, group_name, base_frame, tip_frames, search_discretization);
-  if (!lookupParam(node, "link_prefix", link_prefix_, std::string("")))
+  if (!node->get_parameter_or("link_prefix", link_prefix_, std::string("")))
   {
     RCLCPP_INFO(LOGGER, "Using empty link_prefix.");
   }

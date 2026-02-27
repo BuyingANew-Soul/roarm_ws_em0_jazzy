@@ -1,0 +1,65 @@
+[0.249s] Invoking command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_moveit_ikfast_plugins
+[0.293s] -- The C compiler identification is GNU 13.3.0
+[0.330s] -- The CXX compiler identification is GNU 13.3.0
+[0.343s] -- Detecting C compiler ABI info
+[0.405s] -- Detecting C compiler ABI info - done
+[0.411s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.411s] -- Detecting C compile features
+[0.411s] -- Detecting C compile features - done
+[0.418s] -- Detecting CXX compiler ABI info
+[0.489s] -- Detecting CXX compiler ABI info - done
+[0.499s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.499s] -- Detecting CXX compile features
+[0.499s] -- Detecting CXX compile features - done
+[0.502s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.598s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.643s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.683s] -- Found moveit_core: 2.12.4 (/opt/ros/jazzy/share/moveit_core/cmake)
+[0.794s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.845s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[0.869s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.877s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.887s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.898s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.943s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.945s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.994s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.004s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.016s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.065s] -- Found rclcpp_lifecycle: 28.1.12 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[1.089s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[1.172s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.172s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.378s] -- Looking for sgemm_
+[1.438s] -- Looking for sgemm_ - not found
+[1.440s] -- Found Threads: TRUE  
+[1.499s] -- Looking for sgemm_
+[1.562s] -- Looking for sgemm_ - found
+[1.562s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  
+[1.564s] -- Looking for cheev_
+[1.620s] -- Looking for cheev_ - not found
+[1.643s] -- Looking for cheev_
+[1.699s] -- Looking for cheev_ - found
+[1.699s] -- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so  
+[1.757s] -- Configuring done (1.5s)
+[1.769s] -- Generating done (0.0s)
+[1.772s] -- Build files have been written to: /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins
+[1.783s] Invoked command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/install/roarm_moveit_ikfast_plugins
+[1.784s] Invoking command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins -- -j24 -l24
+[1.820s] [ 50%] [32mBuilding CXX object CMakeFiles/roarm_description_hand_moveit_ikfast_plugin.dir/src/roarm_description_hand_ikfast_moveit_plugin.cpp.o[0m
+[2.923s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_description_hand_ikfast_moveit_plugin.cpp:45[m[K:
+[2.923s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/kinematics_base/kinematics_base.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[2.924s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[2.924s]       |                                                                             [01;36m[K^[m[K
+[2.937s] In file included from [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_description_hand_ikfast_moveit_plugin.cpp:46[m[K:
+[2.938s] [01m[K/opt/ros/jazzy/include/moveit_core/moveit/robot_state/robot_state.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[2.938s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[2.938s]       |                                                                             [01;36m[K^[m[K
+[3.856s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_description_hand_ikfast_moveit_plugin.cpp:[m[K In member function ‘[01m[Kvirtual bool roarm_description_hand::IKFastKinematicsPlugin::[01;32m[Kinitialize[m[K(const rclcpp::Node::SharedPtr&, const moveit::core::RobotModel&, const std::string&, const std::string&, const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&, double)[m[K’:
+[3.856s] [01m[K/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/src/roarm_main/roarm_moveit_ikfast_plugins/src/roarm_description_hand_ikfast_moveit_plugin.cpp:413:8:[m[K [01;31m[Kerror: [m[K‘[01m[KlookupParam[m[K’ was not declared in this scope
+[3.856s]   413 |   if (![01;31m[KlookupParam[m[K(node, "link_prefix", link_prefix_, std::string("")))
+[3.856s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[5.457s] gmake[2]: *** [CMakeFiles/roarm_description_hand_moveit_ikfast_plugin.dir/build.make:76: CMakeFiles/roarm_description_hand_moveit_ikfast_plugin.dir/src/roarm_description_hand_ikfast_moveit_plugin.cpp.o] Error 1
+[5.458s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/roarm_description_hand_moveit_ikfast_plugin.dir/all] Error 2
+[5.458s] gmake: *** [Makefile:146: all] Error 2
+[5.460s] Invoked command in '/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/roarm_moveit_ikfast_plugins -- -j24 -l24

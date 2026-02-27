@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/nameless/Desktop/RoARM_Jazzy_ws/src/roarm_ws_em0_jazzy/build/ros2web_interfaces/rosidl_generator_py/ros2web_interfaces/ros2web_interfaces_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "ros2web_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/ros2web_interfaces")

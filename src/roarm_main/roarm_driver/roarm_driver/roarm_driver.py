@@ -39,6 +39,7 @@ class ReadLine:
     def clear_buffer(self):
         self.s.reset_input_buffer()
 
+
 class BaseController:
     def __init__(self, uart_dev_set, baud_set):
         self.logger = logging.getLogger('BaseController')
@@ -48,8 +49,9 @@ class BaseController:
         self.command_thread = threading.Thread(target=self.process_commands, daemon=True)
         self.command_thread.start()
         self.data_buffer = None
-        self.base_data = {"T": 1051, "x": 0, "y": 0, "z": 0, "b": 0, "s": 0, "e": 0, "t": 0, "torB": 0, "torS": 0, "torE": 0, "torH": 0}
-        
+        self.base_data = {"T": 1051, "x": 0, "y": 0, "z": 0, "b": 0, "s": 0,
+                          "e": 0, "t": 0, "torB": 0, "torS": 0, "torE": 0, "torH": 0}
+
     def feedback_data(self):
         try:
             line = self.rl.readline().decode('utf-8')
@@ -78,64 +80,72 @@ class BaseController:
 
     def base_json_ctrl(self, input_json):
         self.send_command(input_json)
-        
+
+
 class RoarmDriver(Node):
 
     def __init__(self):
         super().__init__('roarm_driver')
-        
+
         self.declare_parameter('serial_port', serial_port)
         self.declare_parameter('baud_rate', 115200)
-        
+
         serial_port_name = self.get_parameter('serial_port').get_parameter_value().string_value
         baud_rate = self.get_parameter('baud_rate').get_parameter_value().integer_value
-        
+
         try:
             self.serial_port = serial.Serial(serial_port_name, baud_rate)
             self.get_logger().info(f"{serial_port_name},{baud_rate}.")
-            
+
             start_data = json.dumps({'T': 605, "cmd": 0}) + "\n"
             self.serial_port.write(start_data.encode())
             time.sleep(0.1)
-            
+
         except SerialException as e:
-            self.get_logger().error(f"{serial_port_name}：{e}")
+            self.get_logger().error(f"{serial_port_name}: {e}")
             return
 
-        self.joint_states_sub = self.create_subscription(JointState, 'joint_states', self.joint_states_callback,10)  
-        self.pose_sub = self.create_subscription(Pose, 'hand_pose', self.pose_callback,10)
-        self.led_ctrl_sub = self.create_subscription(Float32, 'led_ctrl', self.led_ctrl_callback, 10)  
-                             
-    def joint_states_callback(self, msg):
+        # Absolute topic names (leading /) — these are specific to the roarm
+        # and will never conflict with Leo Rover's /joint_states or other robots.
+        self.joint_states_sub = self.create_subscription(
+            JointState, '/roarm/joint_states', self.joint_states_callback, 10)
+        self.pose_sub = self.create_subscription(
+            Pose, '/roarm/hand_pose', self.pose_callback, 10)
+        self.led_ctrl_sub = self.create_subscription(
+            Float32, '/roarm/led_ctrl', self.led_ctrl_callback, 10)
 
-        header = {
-            'stamp': {
-                'sec': msg.header.stamp.sec,
-                'nanosec': msg.header.stamp.nanosec,
-            },
-            'frame_id': msg.header.frame_id,
-        }
-        
+        self.get_logger().info("Subscribed to /roarm/joint_states")
+
+    def joint_states_callback(self, msg):
+        # Safety guard: silently ignore messages that don't have all roarm joints.
+        # Protects against misconfiguration or topic remapping race conditions.
+        required = ['base_link_to_link1', 'link1_to_link2',
+                    'link2_to_link3', 'link3_to_gripper_link']
+        if not all(j in msg.name for j in required):
+            self.get_logger().warn(
+                f'Ignoring joint_states missing roarm joints. Got: {list(msg.name)}',
+                throttle_duration_sec=5.0,
+            )
+            return
+
         name = msg.name
         position = msg.position
-        velocity = msg.velocity
-        effort = msg.effort
 
-        base = -position[name.index('base_link_to_link1')]
+        base     = -position[name.index('base_link_to_link1')]
         shoulder = -position[name.index('link1_to_link2')]
-        elbow = position[name.index('link2_to_link3')] 
-        hand =  3.1415926 - position[name.index('link3_to_gripper_link')]
+        elbow    =  position[name.index('link2_to_link3')]
+        hand     =  3.1415926 - position[name.index('link3_to_gripper_link')]
 
         data = json.dumps({
-            'T': 102, 
-            'base': base, 
-            'shoulder': shoulder, 
-            'elbow': elbow, 
-            'hand': hand, 
+            'T': 102,
+            'base': base,
+            'shoulder': shoulder,
+            'elbow': elbow,
+            'hand': hand,
             'spd': 0,
             'acc': 10
         }) + "\n"
-        
+
         try:
             self.serial_port.write(data.encode())
             time.sleep(0.05)
@@ -149,39 +159,39 @@ class RoarmDriver(Node):
             self.base_controller = BaseController(serial_port, 115200)
             time.sleep(0.1)
             self.base_controller.feedback_data()
-            
+
             if self.base_controller.base_data["T"] == 1051:
-               feedback = self.base_controller.base_data
-               feedback['x'] /= 1000 
-               feedback['y'] /= 1000
-               feedback['z'] /= 1000  
-               if float(feedback["x"]) != 0.0 or float(feedback["y"]) != 0.0 or float(feedback["z"]) != 0.0:
-                  self.get_logger().info(f'Received feedback from serial port: {feedback}')
+                feedback = self.base_controller.base_data
+                feedback['x'] /= 1000
+                feedback['y'] /= 1000
+                feedback['z'] /= 1000
+                if float(feedback["x"]) != 0.0 or float(feedback["y"]) != 0.0 or float(feedback["z"]) != 0.0:
+                    self.get_logger().info(f'Received feedback from serial port: {feedback}')
             time.sleep(0.1)
 
         except Exception as e:
             self.get_logger().error(f'Error communicating with serial port: {str(e)}')
 
     def led_ctrl_callback(self, msg):
-        data = msg.data
-        
         led_ctrl_data = json.dumps({
-            'T': 114, 
-            "led": data,
-        }) + "\n"    
+            'T': 114,
+            "led": msg.data,
+        }) + "\n"
         self.serial_port.write(led_ctrl_data.encode())
-                                
+
+
 def main(args=None):
     rclpy.init(args=args)
-    
+
     roarm_driver = RoarmDriver()
-    
+
     if roarm_driver.serial_port.is_open:
         rclpy.spin(roarm_driver)
         roarm_driver.destroy_node()
         roarm_driver.serial_port.close()
-    
+
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

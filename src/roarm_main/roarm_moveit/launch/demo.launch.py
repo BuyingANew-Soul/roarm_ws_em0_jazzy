@@ -111,25 +111,44 @@ def generate_launch_description():
         remappings=[
             ("/robot_description",                    "/roarm/robot_description"),
             ("/controller_manager/robot_description", "/roarm/robot_description"),
+            # Remap the joint_states output at the controller_manager level too
+            ("/joint_states",                         "/roarm/joint_states"),
         ],
         output="screen",
     ))
 
     # ------------------------------------------------------------------ #
     # 4. Controller spawners
+    #    joint_state_broadcaster gets an explicit /joint_states remapping
+    #    because the publish_joint_states_topic yaml param is unreliable.
+    #    arm_controller and gripper_controller don't publish joint_states
+    #    so they don't need the remapping.
     # ------------------------------------------------------------------ #
     controller_names = (
         moveit_config.trajectory_execution
         .get("moveit_simple_controller_manager", {})
         .get("controller_names", [])
     )
-    for controller in controller_names + ["joint_state_broadcaster"]:
+
+    # Trajectory controllers — no joint_states remapping needed
+    for controller in controller_names:
         ld.add_action(Node(
             package="controller_manager",
             executable="spawner",
             arguments=[controller],
             output="screen",
         ))
+
+    # joint_state_broadcaster — remap its /joint_states output
+    ld.add_action(Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster"],
+        remappings=[
+            ("/joint_states", "/roarm/joint_states"),
+        ],
+        output="screen",
+    ))
 
     # ------------------------------------------------------------------ #
     # 5. move_group
@@ -171,15 +190,12 @@ def generate_launch_description():
 
     # ------------------------------------------------------------------ #
     # 6. RViz
-    #    Pass monitored_planning_scene_topic as a parameter so the MoveIt
-    #    RViz plugin subscribes to the correct namespaced topic.
     # ------------------------------------------------------------------ #
     rviz_parameters = [
         moveit_config.planning_pipelines,
         moveit_config.robot_description_kinematics,
         moveit_config.joint_limits,
         {
-            # These parameters are read by the MoveIt RViz plugin internals
             "monitored_planning_scene_topic": "/roarm/monitored_planning_scene",
         },
     ]
@@ -193,8 +209,8 @@ def generate_launch_description():
         parameters=rviz_parameters,
         condition=IfCondition(LaunchConfiguration("use_rviz")),
         remappings=[
-            ("robot_description",         "/roarm/robot_description"),
-            ("joint_states",              "/roarm/joint_states"),
+            ("robot_description",          "/roarm/robot_description"),
+            ("joint_states",               "/roarm/joint_states"),
             ("/monitored_planning_scene",  "/roarm/monitored_planning_scene"),
         ],
     ))

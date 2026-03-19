@@ -109,6 +109,7 @@ def generate_launch_description():
             str(package_path / "config/ros2_controllers.yaml"),
         ],
         remappings=[
+            ("/robot_description",                    "/roarm/robot_description"),
             ("/controller_manager/robot_description", "/roarm/robot_description"),
         ],
         output="screen",
@@ -149,7 +150,6 @@ def generate_launch_description():
             "publish_state_updates":      should_publish,
             "publish_transforms_updates": should_publish,
             "monitor_dynamics": False,
-            "joint_state_topic": "/roarm/joint_states",
         },
     ]
 
@@ -164,19 +164,22 @@ def generate_launch_description():
         additional_env={"DISPLAY": os.environ.get("DISPLAY", "")},
         remappings=[
             ("robot_description",         "/roarm/robot_description"),
-            ("/monitored_planning_scene",  "/roarm/monitored_planning_scene"),
+            ("joint_states",              "/roarm/joint_states"),
+            ("/monitored_planning_scene", "/roarm/monitored_planning_scene"),
         ],
     )
 
     # ------------------------------------------------------------------ #
-    # 6. RViz — plain Node so we can attach a condition
+    # 6. RViz
+    #    Pass monitored_planning_scene_topic as a parameter so the MoveIt
+    #    RViz plugin subscribes to the correct namespaced topic.
     # ------------------------------------------------------------------ #
     rviz_parameters = [
         moveit_config.planning_pipelines,
         moveit_config.robot_description_kinematics,
         moveit_config.joint_limits,
         {
-            "joint_state_topic": "/roarm/joint_states",
+            # These parameters are read by the MoveIt RViz plugin internals
             "monitored_planning_scene_topic": "/roarm/monitored_planning_scene",
         },
     ]
@@ -190,8 +193,9 @@ def generate_launch_description():
         parameters=rviz_parameters,
         condition=IfCondition(LaunchConfiguration("use_rviz")),
         remappings=[
-            ("robot_description",        "/roarm/robot_description"),
-            ("/monitored_planning_scene", "/roarm/monitored_planning_scene"),
+            ("robot_description",         "/roarm/robot_description"),
+            ("joint_states",              "/roarm/joint_states"),
+            ("/monitored_planning_scene",  "/roarm/monitored_planning_scene"),
         ],
     ))
 

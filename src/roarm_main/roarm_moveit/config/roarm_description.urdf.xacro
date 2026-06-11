@@ -2,13 +2,24 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="roarm_description">
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
-    <!-- Import roarm_description urdf file -->
+    <!-- ARM (unchanged): IKFast names base_link, link1..link3, hand_tcp -->
     <xacro:include filename="$(find roarm_description)/urdf/roarm_description.urdf" />
-
-    <!-- Import control_xacro -->
     <xacro:include filename="roarm_description.ros2_control.xacro" />
-
-
     <xacro:roarm_description_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
 
+    <!-- Rover + camera as fixed children of base_link.
+         Rotated 180 deg about z (and x negated) because the MoveIt arm's
+         base_link frame is flipped relative to the UGV arm frame the
+         offsets were measured in. This keeps the camera looking the same
+         way the arm reaches. -->
+    <xacro:include filename="$(find ugv_with_arm_camera_description)/urdf/components/ugv_rover_base.urdf.xacro"/>
+    <xacro:ugv_rover_base prefix="ugv_" wheel_joint_type="fixed"/>
+    <joint name="base_link_to_ugv" type="fixed">
+        <parent link="base_link"/>
+        <child  link="ugv_base_footprint"/>
+        <origin xyz="-0.02184 0.0 -0.117" rpy="0 0 3.14159"/>
+    </joint>
+
+    <xacro:include filename="$(find ugv_with_arm_camera_description)/urdf/components/oak_d_pro.urdf.xacro"/>
+    <xacro:oak_d_pro prefix="oak_d_pro_" parent="base_link" origin_xyz="-0.08275 0.0 -0.013" origin_rpy="0 0 3.14159"/>
 </robot>

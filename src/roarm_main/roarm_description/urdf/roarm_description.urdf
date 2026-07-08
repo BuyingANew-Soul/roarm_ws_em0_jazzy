@@ -136,7 +136,7 @@
     <parent link="link3" />
     <child link="gripper_link" />
     <axis xyz="0 0 1" />
-    <limit lower="0" upper="1.5" effort="10.0" velocity="1.0" />
+    <limit lower="-1.2" upper="3" effort="10.0" velocity="1.0" />
   </joint>
 
   <link name="hand_tcp"/>
